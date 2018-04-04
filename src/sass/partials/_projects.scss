@@ -1,74 +1,99 @@
-.project-section {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 42px;
-    position: relative;
-    &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        background: url("../img/splash_project.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 105%;
-        height: 100%;
-        z-index: -1;
-        opacity: 0.7;
-    }
-}
-
-.project {
-    display: flex;
-    flex-direction: row;
-    &__template--left,
-    &__template--right {
-        display: flex;
-        flex-direction: column;
-    }
-    &__template--left {
-        width: 49%;
-        margin-right: 20px;
-    }
-    &__template {
-        margin-bottom: 37px;
-    }
-    &__header {
-        width: 95%;
-        font-family: 'Crete Round';
-        font-size: 36px;
-        line-height: 42px;
-        font-weight: normal;
+    .project-section {
         margin-left: 40px;
-        -webkit-margin-after: 0;
+        margin-right: 40px;
+        padding-top: 42px;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url("../img/splash_project.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 105%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            @media screen and (min-width: 320px) and (max-width: 640px) {
+                background-size: 337%;
+                background-position: center;
+            }
+        }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+            padding-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            .title-header {
+                margin-left: 20px;
+            }
+        }
     }
-    // & :nth-child(even){
-    // }
-    &__one {
-        background: linear-gradient(0deg, #002051, rgba(0, 212, 255, 0)), url("../img/citi_logo.jpg");
-        @include project;
+    
+    .project {
+        display: flex;
+        &__template--left,
+        &__template--right {
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: 320px) and (max-width: 640px) {
+                width: 100%;
+                & :nth-child(odd) {
+                    margin-left: 40px;
+                }
+            }
+        }
+        &__template--left {
+            width: 49%;
+            margin-right: 20px;
+        }
+        &__template {
+            margin-bottom: 37px;
+        }
+        &__header {
+            width: 95%;
+            font-family: 'Crete Round';
+            font-size: 36px;
+            //line-height: 42px;
+            font-weight: normal;
+            margin-left: 40px;
+            -webkit-margin-after: 0;
+            @media screen and (min-width: 320px) and (max-width: 640px) {
+                font-size: 20px;
+            }
+        }
+        &__one {
+            background: $gradient, url("../img/citi_logo.jpg");
+            @include project;
+        }
+        &__two {
+            background: $gradient, url("../img/Abn_logo.jpg");
+            @include project;
+        }
+        &__three {
+            margin-top: 40px;
+            background: $gradient, url("../img/pnb_logo.jpg");
+            @include project;
+        }
+        &__one:hover,
+        &__two:hover,
+        &__three:hover {
+            // opacity: .7;
+            box-shadow: 0 0 10px 1px rgba(60, 63, 90, 0.897);
+            transform: scale(1.05);
+        }
+        @media screen and (min-width:320px) and (max-width:640px) {
+            display: flex;
+            flex-direction: column;
+            &__three {
+                margin-top: 0;
+            }
+        }
     }
-    &__two {
-        background: linear-gradient(0deg, #002051, rgba(0, 212, 255, 0)), url("../img/pnb_logo.jpg");
-        @include project;
+    
+    .role__bottom-left {
+        font-family: RobotoSlab;
+        font-weight: normal;
+        font-size: smaller;
+        margin-bottom: 40px;
+        margin-left: 40px;
     }
-    &__three {
-        margin-top: 40px;
-        background: linear-gradient(0deg, #002051, rgba(0, 212, 255, 0)), url("../img/Abn_logo.jpg");
-        @include project;
-    }
-    &__one:hover,
-    &__two:hover,
-    &__three:hover {
-        // opacity: .7;
-        box-shadow: 0 0 10px 1px rgba(60, 63, 90, 0.897);
-        transform: scale(1.05);
-    }
-}
-
-.role__bottom-left {
-    font-family: RobotoSlab;
-    font-weight: normal;
-    font-size: smaller;
-    margin-bottom: 40px;
-    margin-left: 40px;
-}

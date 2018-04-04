@@ -2,7 +2,8 @@
     width: 45%;
     margin-top: 33px;
     @media screen and (min-width: 320px) and (max-width: 640px) {
-        width: 100%;
+        width: 87%;
+        height: 480px;
     }
 }
 
@@ -30,6 +31,9 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-left: 48px;
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+        top: -22px;
+    }
 }
 
 .skill {

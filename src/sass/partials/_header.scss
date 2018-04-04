@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
     .name-header {
-        font-size: 24px;
+        font-size: 27px;
     }
 }
 
@@ -48,8 +48,9 @@
         .s {
             &__block {
                 padding-top: 12%;
+                margin-left: 0;
                 .title-header {
-                    font-size: 13px;
+                    font-size: 14px;
                 }
             }
         }

@@ -9,4 +9,8 @@
     flex-direction: column;
     justify-content: flex-end;
     transition: all .5s ease-in-out;
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+        width: 280px;
+        height: 194px;
+    }
 }

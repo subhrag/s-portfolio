@@ -20,11 +20,15 @@ body {
 .title-header {
     font-family: 'Crete Round', serif;
     font-size: 48px;
-    // line-height: 60px;
     color: #555;
     margin-bottom: 31px;
     &__white {
         color: white;
+    }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+        font-size: 24px;
+        margin-bottom: 8px;
+        font-weight: lighter;
     }
 }
 
@@ -38,10 +42,11 @@ p {
 
 .intro-section {
     padding-bottom: 33px;
-}
-
-.intro {
     display: flex;
     justify-content: space-around;
     height: 300px;
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+        flex-direction: column;
+        height: auto;
+    }
 }
