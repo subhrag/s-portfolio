@@ -1,0 +1,15 @@
+.article-left {
+    width: 43%;
+    margin: 1px 21px 24px 20px;
+    &__about {
+        overflow: scroll;
+        height: 80%;
+    }
+    &__para {
+        text-align: justify;
+        line-height: 1.5;
+    }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+}
+
+.main-section {
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(67, 67, 67, 0.5);
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.title-header {
+    font-family: 'Crete Round', serif;
+    font-size: 48px;
+    // line-height: 60px;
+    color: #555;
+    margin-bottom: 31px;
+    &__white {
+        color: white;
+    }
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.intro-section {
+    padding-bottom: 33px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}

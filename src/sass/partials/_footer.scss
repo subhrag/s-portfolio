@@ -1,0 +1,13 @@
+.foot {
+    // height: 200px;
+    // padding-top: 70px;
+    &__div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    &__img--competa,
+    &__img--git {
+        margin: 20px;
+    }
+}
