@@ -17,6 +17,7 @@ module.exports = merge(commonConfig, {
                 use: EXTRACT_TEXT_PLUGIN.extract({
                     //fallback: 'style-loader', 'css-loader?url=false'
                     use: [{ loader: 'css-loader', options: { minimize: true } }, 'sass-loader'],
+                    publicPath: '../'
                 })
             },
             {
@@ -24,9 +25,9 @@ module.exports = merge(commonConfig, {
                 use: [{
                     loader: 'file-loader',
                     query: {
-                        //name: '[name].[ext]',
-                        name: path.join('../img/', '[name].[ext]')
-                            // outputPath: 'img/'
+                        name: '[name].[ext]',
+                        // name: path.join('../img/', '[name].[ext]')
+                        outputPath: 'img/'
 
                     }
                 }]
@@ -48,10 +49,11 @@ module.exports = merge(commonConfig, {
 
         new EXTRACT_TEXT_PLUGIN({
             filename: 'css/[name].style.css'
-        })
-        // new COPY_WEBPACK_PLUGIN([
-        //     { from: 'src/img', to: 'img' }
-        // ])
+
+        }),
+        new COPY_WEBPACK_PLUGIN([
+            { from: 'src/img', to: 'img' }
+        ])
         // new BROWSER_SYNC_WEBPACK_PLUGIN({
         //     host: 'localhost',
         //     port: 8080,

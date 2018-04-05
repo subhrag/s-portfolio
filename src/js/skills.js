@@ -2,9 +2,9 @@ window.onload = function() {
     let mySkill = document.getElementsByClassName("skill")[0];
 
     function displaySkills() {
-        const skill_images = ['img/java-logo.png', 'img/spring-logo.png', 'img/api-logo.png', 'img/maven-logo.png', 'img/oracle-logo.png', 'img/hibernate-logo.png', 'img/html-logo.png', 'img/js-logo.png', 'img/css-logo.png', 'img/sass-logo.png', 'img/webpack-logo.png', 'img/gulp-logo.png', 'img/grunt-logo.png', 'img/xml-logo.png', 'img/GitHub-logo.png', 'img/eclipse-logo.png'];
-        const skills = ['java', 'spring', 'api', 'maven', 'oracle', 'hibernate', 'html', 'js', 'css', 'sass', 'xml', 'webpack', 'gulp', 'grunt', 'GitHub', 'eclipse'];
-        // const skill_images = ['img/java-logo.svg']
+        const skill_images = ['img/java-logo.png', 'img/spring-logo.png', 'img/api-logo.png', 'img/maven-logo.png', 'img/oracle-logo.png', 'img/hibernate-logo.png', 'img/html5-logo.png', 'img/js-logo.png', 'img/css-logo.png', 'img/sass-logo.png', 'img/webpack-logo.png', 'img/gulp-logo.png', 'img/grunt-logo.png', 'img/xml-logo.png', 'img/GitHub-logo.png', 'img/eclipse-logo.png'];
+        const skills = ['java', 'spring', 'api', 'maven', 'oracle', 'hibernate', 'html', 'js', 'css', 'sass', 'xml', 'webpack', 'GitHub', 'eclipse'];
+
         skills.forEach((skill, iIndex) => {
 
             skill_images.forEach((image, sIndex) => {
