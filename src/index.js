@@ -1,3 +1,4 @@
-let sass = require('./sass/style.scss');
 let skill = require('./js/skills.js');
-//let resize = require('./js/scroll.js');
+let projects = require('./js/projects.js');
+//let projectDetails = require('./js/projectDetails.js');
+let sass = require('./sass/style.scss');

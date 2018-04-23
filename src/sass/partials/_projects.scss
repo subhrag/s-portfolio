@@ -16,12 +16,13 @@
             opacity: 0.7;
         }
         .title-header {
-            margin-left: 20px;
+            margin-left: 30px;
         }
     }
     
     .project {
         display: flex;
+        padding-left: 30px;
         &__template--left,
         &__template--right {
             width: 48%;
@@ -39,29 +40,26 @@
             margin-bottom: 30px;
         }
         &__header {
-            width: 95%;
-            font-family: 'Crete Round';
-            font-size: 3vw;
-            font-weight: normal;
+            @include project-header;
             -webkit-margin-after: 0;
         }
         &__one {
-            background: $gradient, url("../img/citi_logo.jpg");
+            background: $gradient, url("../img/projects/pnb_logo.jpg");
             @include project;
         }
         &__two {
-            background: $gradient, url("../img/Abn_logo.jpg");
+            background: $gradient, url("../img/projects/Abn_logo.jpg");
             @include project;
         }
         &__three {
-            background: $gradient, url("../img/pnb_logo.jpg");
+            background: $gradient, url("../img/projects/citi_logo.jpg");
             @include project;
         }
         &__one:hover,
         &__two:hover,
         &__three:hover {
-            box-shadow: 0 0 10px 1px rgba(60, 63, 90, 0.897);
-            transform: scale(1.05);
+            box-shadow: 0 0 10px 5px rgba(60, 63, 90, 0.897);
+            // transform: scale(1.05);
         }
     }
     
@@ -69,7 +67,7 @@
         font-family: RobotoSlab;
         font-weight: normal;
         font-size: smaller;
-        margin-bottom: 40px;
+        //margin-bottom: 40px;
     }
     
     @media screen and (min-width: 320px) and (max-width: 640px) {

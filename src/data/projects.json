@@ -1,0 +1,48 @@
+{
+    "projects": [{
+
+            "name": "PNB Met Life India",
+            "company": "TCS",
+            "role": "Back End",
+            "folder": "PNB",
+            "side": "right",
+
+            "description": [
+                "Underwriting decisions implementation for several Insurance products.  "
+
+            ],
+            "skills": ["java-logo.png", "oracle-logo.png", "html5-logo.png", "js-logo.png", "css-logo.png", "xml-logo.png", "eclipse-logo.png"],
+
+            "class": "one"
+        },
+        {
+            "name": "ABN Amro",
+            "company": "TCS",
+            "role": "Back End",
+            "folder": "ABN",
+            "side": "left",
+
+            "description": [
+                "Uniform reports generation and distribution by various channels, formats, compression and encryption technologies. Clients can receive reports via Email, FTP or SCP."
+            ],
+            "skills": ["java-logo.png", "spring-logo.png", "api-logo.png", "maven-logo.png", "hibernate-logo.png", "junit-logo.png", "xml-logo.png", "eclipse-logo.png"],
+
+            "class": "two"
+        },
+        {
+            "name": "Citi Bank Latin America",
+            "company": "TCS",
+            "role": "Back End",
+            "folder": "CITI",
+            "side": "left",
+
+            "description": [
+                "Maintenance and Support for several applications. Development of monitoring tool for log analysis and health check Worked on multiple CR’ s to solve different issues on monitoring tool(core java)."
+
+            ],
+            "skills": ["java-logo.png", "maven-logo.png", "html5-logo.png", "js-logo.png", "css-logo.png", "eclipse-logo.png"],
+
+            "class": "three"
+        }
+    ]
+}

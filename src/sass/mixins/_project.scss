@@ -14,3 +14,10 @@
         height: 65vw;
     }
 }
+
+@mixin project-header {
+    width: 95%;
+    font-family: 'Crete Round';
+    font-size: 3vw;
+    font-weight: normal;
+}

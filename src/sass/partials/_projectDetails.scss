@@ -1,0 +1,44 @@
+.project {
+    &__details {
+        display: none;
+        position: fixed;
+        width: 100%; //cover page
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../img/splash_project.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        // z-index: 2;
+        align-content: center;
+        padding: 70px;
+        &--template {
+            width: 100vw; //cover page
+            display: flex;
+            background-color: white;
+            color: black;
+            align-items: center;
+        }
+        &--para {
+            font-size: 1.5vw;
+        }
+        &--header {
+            @include project-header;
+        }
+        &--article,
+        &--aside {
+            width: 47.5%;
+        }
+        &--article {
+            margin: 1%;
+        }
+        &--aside {
+            margin-left: 1%;
+        }
+    }
+    &__skills-header {
+        font-size: 3vw;
+    }
+}
