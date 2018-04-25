@@ -39,28 +39,31 @@ function project_skill() {
         let elem = `<div class="project__template project__${project.class}">
                 <h3 class="project__header">${project.name}</h3>
                 <p class="role__bottom-left">${project.role}</p>
-                <div class="project__details">
-                <div class="project__details--template">
-                    <article class="project__details--article">
-                        <h4 class="project__header">${project.name}</h4>
+        <div class="project__details">
+            <div class="project__details--template">
+              <article class="project__details--article">
+                        <h4 class="project__header">Description</h4>
                         <p class="project__details--para">${project.description}</p>
                     </article>
                     <aside class="project__details--aside">
-                        <div class="aside-skill aside-skill__project">
-                            <h2 class="title-header project__skills-header">Skills</h2>
-                            <div class="skill skill__project" id="skill__project">
-                                ${skills_elements}
-                            </div>
-                        </div>
+                        <div class="project__${project.class}">
+                        <h3 class="project__header">${project.name}</h3>
+                        <p class="role__bottom-left">${project.role}</p></div>
                     </aside>
-                    </div>
-                </div>
-            </div>`;
+            </div>
+        </div>
+        </div>`;
+
+
 
         if (project.side === "left") {
             template_left.innerHTML += elem;
+            let project_details_template = document.querySelectorAll(".project__details--template");
+            //project_details_template.style.flexDirection = "row-reverse";
+            console.log(project_details_template);
         } else {
             template_right.innerHTML += elem;
+
         }
     });
 
@@ -80,3 +83,11 @@ function project_skill() {
     }
 
 }
+
+
+/* <div class="aside-skill aside-skill__project">
+                            <h2 class="title-header project__skills-header">Skills</h2>
+                            <div class="skill skill__project" id="skill__project">
+                                ${skills_elements}
+                            </div>
+                        </div> */

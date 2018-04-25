@@ -86,6 +86,7 @@
         .project {
             display: flex;
             flex-direction: column;
+            padding: 0;
             &__template--left,
             &__template--right {
                 width: 100%;

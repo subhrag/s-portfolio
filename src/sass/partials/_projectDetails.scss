@@ -1,44 +1,72 @@
-.project {
-    &__details {
-        display: none;
-        position: fixed;
-        width: 100%; //cover page
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url("../img/splash_project.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        // z-index: 2;
-        align-content: center;
-        padding: 70px;
-        &--template {
-            width: 100vw; //cover page
-            display: flex;
-            background-color: white;
-            color: black;
-            align-items: center;
+        .project {
+            &__details {
+                display: none;
+                position: fixed;
+                width: 100%; //cover page
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url("../img/splash_project.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                // z-index: 2;
+                align-items: center;
+                padding: 70px;
+                &--template {
+                    width: 100vw; //cover page
+                    display: flex;
+                    background-color: white;
+                    color: black;
+                    align-items: center;
+                    @include border;
+                    padding: 5%;
+                }
+                &--para {
+                    font-size: 1.5vw;
+                }
+                &__header {
+                    @include project-header;
+                }
+                &--article,
+                &--aside {
+                    width: 47.5%;
+                    color: rgb(0, 0, 0);
+                }
+                &--article {
+                    margin: 1%;
+                }
+                &--aside {
+                    margin-left: 1%;
+                }
+            }
+            &__skills-header {
+                font-size: 3vw;
+            }
         }
-        &--para {
-            font-size: 1.5vw;
+        
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+            .project {
+                &__details {
+                    margin: 0;
+                    padding: 0;
+                    &--article,
+                    &--aside {
+                        width: 100%;
+                    }
+                    &--template {
+                        flex-direction: column;
+                        // & :nth-of-type(odd) {
+                        //     margin: 0;
+                        // }
+                    }
+                }
+                &__template--left,
+                &__template--right {
+                    & :nth-of-type(odd) {
+                        margin-left: 0;
+                    }
+                }
+            }
         }
-        &--header {
-            @include project-header;
-        }
-        &--article,
-        &--aside {
-            width: 47.5%;
-        }
-        &--article {
-            margin: 1%;
-        }
-        &--aside {
-            margin-left: 1%;
-        }
-    }
-    &__skills-header {
-        font-size: 3vw;
-    }
-}

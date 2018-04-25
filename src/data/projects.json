@@ -8,7 +8,7 @@
             "side": "right",
 
             "description": [
-                "Underwriting decisions implementation for several Insurance products.  "
+                "Underwriting decisions implementation for several Insurance products.I Implemented business logic in JAVA for those products. Along with that I perticipated in testing(unit, integration and UAT) and deployment(UAT, Staging and PROD)."
 
             ],
             "skills": ["java-logo.png", "oracle-logo.png", "html5-logo.png", "js-logo.png", "css-logo.png", "xml-logo.png", "eclipse-logo.png"],
@@ -23,7 +23,7 @@
             "side": "left",
 
             "description": [
-                "Uniform reports generation and distribution by various channels, formats, compression and encryption technologies. Clients can receive reports via Email, FTP or SCP."
+                "Uniform reports generation and distribution by various channels, formats, compression and encryption technologies. Clients can receive reports via Email, FTP or SCP. I worked in client interface with CRUD functionalities as well as report generation using ETL tool."
             ],
             "skills": ["java-logo.png", "spring-logo.png", "api-logo.png", "maven-logo.png", "hibernate-logo.png", "junit-logo.png", "xml-logo.png", "eclipse-logo.png"],
 
@@ -37,7 +37,7 @@
             "side": "left",
 
             "description": [
-                "Maintenance and Support for several applications. Development of monitoring tool for log analysis and health check Worked on multiple CR’ s to solve different issues on monitoring tool(core java)."
+                "Maintenance and Support for several applications. Development of monitoring tool for log analysis and health check. Worked on multiple CR’ s to solve different issues on monitoring tool(core java). Log analysis of several applications and co-ordinate with users to solve major issues."
 
             ],
             "skills": ["java-logo.png", "maven-logo.png", "html5-logo.png", "js-logo.png", "css-logo.png", "eclipse-logo.png"],

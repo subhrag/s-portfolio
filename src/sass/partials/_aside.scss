@@ -11,10 +11,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    border: 5px solid transparent;
-    border-image-source: url("../img/border.png");
-    border-image-repeat: round;
-    border-image-slice: 7;
+    @include border;
     border-width: 5px 0 5px 5px;
     &__project {
         border-width: 5px 5px 5px 5px;
