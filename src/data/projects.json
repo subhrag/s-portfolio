@@ -43,6 +43,20 @@
             "skills": ["java-logo.png", "maven-logo.png", "html5-logo.png", "js-logo.png", "css-logo.png", "eclipse-logo.png"],
 
             "class": "three"
+        },
+        {
+            "name": "Competa Office Dashboard",
+            "company": "Competa IT",
+            "role": "Back End",
+            "folder": "COMPETA",
+            "side": "right",
+
+            "description": [
+                "Working as Full-stack Developer on a CRM system for Competa. I am currently responsible for connecting the Front-end to the Back-end using Vue.js, Vuetify and GraphQL."
+            ],
+            "skills": ["html5-logo.png", "js-logo.png", "css-logo.png"],
+
+            "class": "four"
         }
     ]
 }

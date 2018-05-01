@@ -23,6 +23,9 @@
                     @include border;
                     padding: 5%;
                 }
+                &--right {
+                    flex-direction: row-reverse;
+                }
                 &--para {
                     font-size: 1.5vw;
                 }
@@ -57,15 +60,7 @@
                     }
                     &--template {
                         flex-direction: column;
-                        // & :nth-of-type(odd) {
-                        //     margin: 0;
-                        // }
-                    }
-                }
-                &__template--left,
-                &__template--right {
-                    & :nth-of-type(odd) {
-                        margin-left: 0;
+                        //  @include border(none);
                     }
                 }
             }

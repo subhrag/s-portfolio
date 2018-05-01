@@ -55,9 +55,14 @@
             background: $gradient, url("../img/projects/citi_logo.jpg");
             @include project;
         }
+        &__four {
+            background: $gradient, url("../img/projects/citi_logo.jpg");
+            @include project;
+        }
         &__one:hover,
         &__two:hover,
-        &__three:hover {
+        &__three:hover,
+        &__four:hover {
             box-shadow: 0 0 10px 5px rgba(60, 63, 90, 0.897);
             // transform: scale(1.05);
         }
@@ -90,9 +95,6 @@
             &__template--left,
             &__template--right {
                 width: 100%;
-                & :nth-of-type(odd) {
-                    margin-left: 20px;
-                }
             }
             &__template--right {
                 margin-left: 0;

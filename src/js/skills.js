@@ -40,7 +40,7 @@ function project_skill() {
                 <h3 class="project__header">${project.name}</h3>
                 <p class="role__bottom-left">${project.role}</p>
         <div class="project__details">
-            <div class="project__details--template">
+            <div class="project__details--template project__details--${project.side}">
               <article class="project__details--article">
                         <h4 class="project__header">Description</h4>
                         <p class="project__details--para">${project.description}</p>
@@ -58,9 +58,10 @@ function project_skill() {
 
         if (project.side === "left") {
             template_left.innerHTML += elem;
-            let project_details_template = document.querySelectorAll(".project__details--template");
-            //project_details_template.style.flexDirection = "row-reverse";
-            console.log(project_details_template);
+            // let project_details_template = document.querySelectorAll(".project__details--template");
+            // project_details_template.style.flexDirection = "row-reverse";
+            // console.log(project_details_template);
+            // document.querySelectorAll(".project__details--template").style.flexDirection = "row-reverse";
         } else {
             template_right.innerHTML += elem;
 
