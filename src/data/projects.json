@@ -1,0 +1,62 @@
+{
+    "projects": [{
+
+            "name": "PNB Met Life India",
+            "company": "TCS",
+            "role": "Back End",
+            "folder": "PNB",
+            "side": "right",
+
+            "description": [
+                "Underwriting decisions implementation for several Insurance products.I Implemented business logic in JAVA for those products. Along with that I perticipated in testing(unit, integration and UAT) and deployment(UAT, Staging and PROD)."
+
+            ],
+            "skills": ["java-logo.png", "oracle-logo.png", "html5-logo.png", "js-logo.png", "css-logo.png", "xml-logo.png", "eclipse-logo.png"],
+
+            "class": "one"
+        },
+        {
+            "name": "ABN Amro",
+            "company": "TCS",
+            "role": "Back End",
+            "folder": "ABN",
+            "side": "left",
+
+            "description": [
+                "Uniform reports generation and distribution by various channels, formats, compression and encryption technologies. Clients can receive reports via Email, FTP or SCP. I worked in client interface with CRUD functionalities as well as report generation using ETL tool."
+            ],
+            "skills": ["java-logo.png", "spring-logo.png", "api-logo.png", "maven-logo.png", "hibernate-logo.png", "junit-logo.png", "xml-logo.png", "eclipse-logo.png"],
+
+            "class": "two"
+        },
+        {
+            "name": "Citi Bank Latin America",
+            "company": "TCS",
+            "role": "Back End",
+            "folder": "CITI",
+            "side": "left",
+
+            "description": [
+                "Maintenance and Support for several applications. Development of monitoring tool for log analysis and health check. Worked on multiple CR’ s to solve different issues on monitoring tool(core java). Log analysis of several applications and co-ordinate with users to solve major issues."
+
+            ],
+            "skills": ["java-logo.png", "maven-logo.png", "html5-logo.png", "js-logo.png", "css-logo.png", "eclipse-logo.png"],
+
+            "class": "three"
+        },
+        {
+            "name": "Competa Office Dashboard",
+            "company": "Competa IT",
+            "role": "Back End",
+            "folder": "COMPETA",
+            "side": "right",
+
+            "description": [
+                "Working as Full-stack Developer on a CRM system for Competa. I am currently responsible for connecting the Front-end to the Back-end using Vue.js, Vuetify and GraphQL."
+            ],
+            "skills": ["html5-logo.png", "js-logo.png", "css-logo.png"],
+
+            "class": "four"
+        }
+    ]
+}

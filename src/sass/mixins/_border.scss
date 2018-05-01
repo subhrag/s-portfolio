@@ -1,0 +1,6 @@
+@mixin border {
+    border: 5px solid transparent;
+    border-image-source: url("../img/border.png");
+    border-image-repeat: round;
+    border-image-slice: 7;
+}

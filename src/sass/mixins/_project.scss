@@ -1,5 +1,5 @@
 @mixin project {
-    width: 95%;
+    width: 100%;
     height: 25vw;
     padding: 0 30px;
     opacity: 1;
@@ -13,4 +13,11 @@
     @media screen and (min-width: 320px) and (max-width: 640px) {
         height: 65vw;
     }
+}
+
+@mixin project-header {
+    width: 95%;
+    font-family: 'Crete Round';
+    font-size: 3vw;
+    font-weight: normal;
 }

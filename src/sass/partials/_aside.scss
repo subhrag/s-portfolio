@@ -1,6 +1,7 @@
 .aside-right {
-    width: 50%;
-    margin-left: 26px;
+    width: 48%;
+    // margin-left: 26px;
+    margin: 1%;
     padding-top: 33px;
     overflow-x: hidden;
 }
@@ -10,11 +11,11 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    border: 5px solid transparent;
-    border-image-source: url("../img/border.png");
-    border-image-repeat: round;
-    border-image-slice: 7;
+    @include border;
     border-width: 5px 0 5px 5px;
+    &__project {
+        border-width: 5px 5px 5px 5px;
+    }
 }
 
 .skills-header {
@@ -28,18 +29,24 @@
 }
 
 .skill {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(5, 70px);
-    margin-top: 20px;
-    padding: 14px;
+    //  display: grid;
+    // grid-gap: 40px;
+    // grid-template-columns: repeat(5, 70px);
+    display: flex;
+    flex-wrap: wrap;
+    //margin-top: 20px;
+    padding: 20px;
+    &__project {
+        // grid-gap: 0;
+        grid-template-columns: repeat(5, 70px);
+    }
     &__icon {
-        width: auto;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        margin-left: 10px;
+        margin: 13px;
         border-radius: 5px;
         transition: $skill-transition;
     }
@@ -53,7 +60,8 @@
     .aside-right {
         width: 87%;
     }
-    .skill {
+    .skill,
+    .skill__project {
         grid-template-columns: repeat(2, 70px);
     }
     .skills-header {

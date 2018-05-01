@@ -52,7 +52,7 @@ module.exports = merge(commonConfig, {
 
         }),
         new COPY_WEBPACK_PLUGIN([
-            { from: 'src/img', to: 'img' }
+            { from: 'src/img', to: 'img/' }
         ])
         // new BROWSER_SYNC_WEBPACK_PLUGIN({
         //     host: 'localhost',
