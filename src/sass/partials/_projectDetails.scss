@@ -38,10 +38,14 @@
                     color: rgb(0, 0, 0);
                 }
                 &--article {
-                    margin: 1%;
+                    margin: 2%;
                 }
                 &--aside {
-                    margin-left: 1%;
+                    margin: 2%;
+                    .project__four {
+                        background: $gradient, url("../img/projects/ODemployee.jpg");
+                        @include project;
+                    }
                 }
             }
             &__skills-header {
