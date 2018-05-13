@@ -11,7 +11,7 @@ function displaySkills() {
     skills.forEach((skill, iIndex) => {
         skill_images.forEach((image, sIndex) => {
             let span = document.createElement('span');
-            span.style.backgroundImage = 'url(../image/skills/' + image + ')';
+            span.style.backgroundImage = 'url(image/skills/' + image + ')';
             if (image.includes(skill)) {
                 span.className = 'skill__icon';
                 mySkill.append(span);
