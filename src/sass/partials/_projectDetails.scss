@@ -8,7 +8,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-image: url("../img/splash_project.jpg");
+                background-image: url("../../image/splash_project.jpg");
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
                 // z-index: 2;
@@ -43,7 +43,7 @@
                 &--aside {
                     margin: 2%;
                     .project__four {
-                        background: $gradient, url("../img/projects/ODemployee.jpg");
+                        background: $gradient, url("../../image/ODemployee.jpg");
                         @include project;
                     }
                 }

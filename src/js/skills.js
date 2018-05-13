@@ -11,7 +11,7 @@ function displaySkills() {
     skills.forEach((skill, iIndex) => {
         skill_images.forEach((image, sIndex) => {
             let span = document.createElement('span');
-            span.style.backgroundImage = 'url(./img/skills/' + image + ')';
+            span.style.backgroundImage = 'url(../image/skills/' + image + ')';
             if (image.includes(skill)) {
                 span.className = 'skill__icon';
                 mySkill.append(span);
@@ -32,7 +32,7 @@ function project_skill() {
         let skills_elements = '';
 
         skills.map(project_skill => {
-            skills_elements += `<span class="skill__icon" style="background-image: url(./img/skills/${project_skill})"></span>`;
+            skills_elements += `<span class="skill__icon" style="background-image: url(../image/skills/${project_skill})"></span>`;
         })
 
 

@@ -7,7 +7,7 @@
             content: '';
             display: block;
             position: absolute;
-            background: url("../img/splash_project.jpg");
+            background: url("../../image/splash_project.jpg");
             background-repeat: no-repeat;
             background-size: 100% 100%;
             width: 100%;
@@ -45,19 +45,19 @@
             -webkit-margin-after: 0;
         }
         &__one {
-            background: $gradient, url("../img/projects/pnb_logo.jpg");
+            background: $gradient, url("../../image/pnb_logo.jpg");
             @include project;
         }
         &__two {
-            background: $gradient, url("../img/projects/Abn_logo.jpg");
+            background: $gradient, url("../../image/Abn_logo.jpg");
             @include project;
         }
         &__three {
-            background: $gradient, url("../img/projects/citi_logo.jpg");
+            background: $gradient, url("../../image/citi_logo.jpg");
             @include project;
         }
         &__four {
-            background: $gradient, url("../img/projects/OD.jpg");
+            background: $gradient, url("../../image/OD.jpg");
             @include project;
         }
         &__one:hover,

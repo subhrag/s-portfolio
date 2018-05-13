@@ -27,7 +27,7 @@ module.exports = merge(commonConfig, {
                     query: {
                         name: '[name].[ext]',
                         // name: path.join('../img/', '[name].[ext]')
-                        outputPath: 'img/'
+                        outputPath: 'image/'
 
                     }
                 }]
@@ -52,7 +52,7 @@ module.exports = merge(commonConfig, {
 
         }),
         new COPY_WEBPACK_PLUGIN([
-            { from: 'src/img', to: 'img/' }
+            { from: 'image', to: 'image' }
         ])
         // new BROWSER_SYNC_WEBPACK_PLUGIN({
         //     host: 'localhost',
